@@ -91,7 +91,7 @@ export class GameManager extends Component {
                 }
                 setTimeout(() => {
                     GameManager.currentGameState = GameState.GS_REAL_PLAYING;
-                }, 1000)
+                }, 500)
                 break;
             case GameState.GS_END:
                 GameManager.currentGameState = GameState.GS_END;
