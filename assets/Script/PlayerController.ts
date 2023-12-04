@@ -23,7 +23,6 @@ export class PlayerController extends Component {
     start() {
         const input = new Input();
         input.on(Input.EventType.MOUSE_UP, this.onMouseUp, this);
-        // this.node.on('JumpEnd', this.onPlayerJumpEnd, this);
     }
 
     reset() {
@@ -75,7 +74,6 @@ export class PlayerController extends Component {
     }
 
     onOnceJumpEnd() {
-        // this.node.emit('JumpEnd', this._curMoveIndex);
         eventTarget.emit('JumpEnd', this._curMoveIndex);
     }
 
